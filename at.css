@@ -16,7 +16,7 @@
   --button-bg-light: #f3f3f3;
   --cards-area-bg: #f4f4f6;
   --cards-bg: #fff;
-  --buttons-color-primary: #d84851;
+  --buttons-color-primary: #fdaaa2;
   --buttons-color-secondary: #f8e4e5;
   --filter-bg: #fff;
   --search-bg: #fff;
@@ -234,6 +234,7 @@ section.app-actions {
   border: 1px solid var(--buttons-color-primary);
   padding: 10px 16px;
   font-size: 14px;
+  
   
   .dark & {
    border: none;
@@ -951,4 +952,10 @@ section.app-actions {
   }
   
   .contact-actions span { display: none; }
+}
+.logo img{
+  width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 2px solid #000;
 }
