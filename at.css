@@ -954,8 +954,13 @@ section.app-actions {
   .contact-actions span { display: none; }
 }
 .logo img{
-  width: 80px;
-        height: 80px;
+  width: 70px;
+        height: 70px;
         border-radius: 50%;
         border: 2px solid #000;
+}
+.qpay img{
+  width: 50px;
+  height: 50px;
+  
 }
