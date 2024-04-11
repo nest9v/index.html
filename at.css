@@ -399,7 +399,7 @@ section.app-actions {
     height: 160px;
   }
   
-  .card-image-wrapper img {
+  .card-image-wrapper iframe {
     margin: 0;
   }
 }
