@@ -8,30 +8,22 @@
 
 :root {
   font-family: 'Quicksand', sans-serif;
-  --app-bg: #fff;
+  --app-bg: #000;
   --modal-before: rgba(215,215,215,.5);
-  --main-font-color: #000;
+  --main-font-color: #fff;
   --light-font-color: #becaca;
   --main-border-color:  #f3f3f3;
   --secondary-border-color: #faeceb;
   --button-bg-light: #f3f3f3;
   --cards-area-bg: #f4f4f6;
   --cards-bg: #fff;
-  --buttons-color-primary: #fdaaa2;
+  --buttons-color-primary: #e7d2d0;
   --buttons-color-secondary: #f8e4e5;
   --filter-bg: #fff;
   --search-bg: #fff;
 }
 
-.dark:root {
-  --app-bg: #0c0c0c;
-  --main-font-color: #fff;
-  --cards-area-bg: #20222a;
-  --cards-bg: #111317;
-  --filter-bg: #111317;
-  --search-bg: #20222a;
-  --modal-before: rgba(0, 0, 0, .8);
-}
+
 
 .nav-right-side {
   display: flex;
@@ -75,13 +67,13 @@
   width: 0;
 }
 
-body, html {
+body,html {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: var(--app-bg);
+  background-color: #7a529f;
   transition: .2s;
 }
 
@@ -259,6 +251,7 @@ section.app-actions {
     line-height: 16px;
     font-weight: 500;
     margin-right: 8px;
+    color: var(--button-bg-light);
     
     .dark & { color: #fff; }
   }
@@ -457,7 +450,7 @@ section.app-actions {
   &.big {
     font-size: 16px;
     font-weight: 600;
-    color: var(--main-font-color);
+    color: var(--app-bg);
   }
   
   &.small {
@@ -958,7 +951,7 @@ section.app-actions {
   width: 70px;
         height: 70px;
         border-radius: 50%;
-        border: 2px solid #000;
+        border: 0.5px solid #fff;
 }
 .qpay img{
   width: 50px;
@@ -984,13 +977,16 @@ header{
   text-decoration: none;
   
 }
+.navi a{
+  color: #ffff;
+}
 .wrapper{
   position: relative;
   width: 400px;
   height: 440px;
   background: transparent;
   border-radius: 20px;
-  backdrop-filter: blur(20px);
+  background: #BD7DFA;
   box-shadow: 0 0 30px rgba(0, 0, 0, .5);
   display: flex;
   justify-content: center;
@@ -1006,6 +1002,9 @@ header{
   justify-content: center;
   align-items: center;
   margin: 10px 0;
+}
+.bg{
+  background: #7a529f;
 }
 .wrapper .form-box{
   width: 100%;
@@ -1032,14 +1031,14 @@ transform: translateX(-400px);
 
 .form-box h2{
   font-size: 2em;
-  color: #000;
+  color: #fff;
   text-align: center;
 }
 .input-box{
   position: relative;
   width: 100%;
   height: 50px;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #fff;
   margin: 30px 0;
 }
 body{
@@ -1047,7 +1046,6 @@ body{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  
   background-size: cover;
   background-position: center;
 }
@@ -1057,7 +1055,7 @@ body{
   left: 5px;
   transform: translateY(-50%);
   font-size: 1em;
-  color: #000;
+  color: #fff;
   font-weight: 500;
   pointer-events: none;
   transition: .5s;
@@ -1075,7 +1073,7 @@ body{
   border: none;
   outline: none;
   font-size: 1rem;
-  color: #000;
+  color: #fff;
   font-weight: 600;
   padding: 0 35px 0 5px;
 }
@@ -1083,13 +1081,13 @@ body{
   position: absolute;
   right: 8px;
   font-size: 1.2rem;
-  color: #000;
+  color: #fff;
   line-height: 57px;
 }
 
 .remember-forgot { 
   font-size: .9em;  
-  color: U#162938;  
+  color: U #fff;  
   font-weight: 500;  
   margin: -15px 0 15px;  
   display: flex;  
@@ -1097,11 +1095,11 @@ body{
   space-between; 
 }
 .remember-forgot label input{
-  accent-color: #162938;
+  accent-color: #fff;
   margin-right: 3px;
 }
 .remember-forgot a{
-  color: #162938;
+  color: #fff;
   text-decoration: none;
 }
 .remember-forgot a:hover{
@@ -1110,24 +1108,24 @@ text-decoration: underline;
 .btn{
   width: 100%;
   height: 45px;
-  background: #162938;
+  background: #fff;
   border: none;
   outline: none;
   border-radius: 6px;
   cursor: pointer;
   font-size: 1em;
-  color: #fff;
+  color: #000;
   font-weight: 500;
 }
 .login-register{
   font-size: .9em;
-  color: #162938;
+  color: #fff;
   text-align: center;
   font-weight: 500;
   margin: 25px 0 10px;
 }
 .login-register p a {
-  color: #162938;
+  color: #fff;
   text-decoration: none;
   font-weight: 600;
 }

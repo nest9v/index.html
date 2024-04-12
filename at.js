@@ -1,10 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
-    var modeSwitch = document.querySelector('.mode-switch');
-  
-    modeSwitch.addEventListener('click', function () {
-      document.documentElement.classList.toggle('dark');
-    });
-  });
+
   
   function openModal(){
     let modal= document.querySelector('#modal-window');
@@ -16,9 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     m.classList.remove("showModal");
   }
   
-  document.getElementsByClassName('.mode-switch').onclick = function() {
-    document.body.classList.toggle('dark');
-  }
+  
   
   const cardItems = document.querySelectorAll('.main-card');
   const modalHeader = document.querySelector('.modalHeader-js');
