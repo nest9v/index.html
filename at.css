@@ -9,7 +9,7 @@
 :root {
   font-family: 'Quicksand', sans-serif;
   --app-bg: #000;
-  --modal-before: rgba(215,215,215,.5);
+
   --main-font-color: #fff;
   --light-font-color: #becaca;
   --main-border-color:  #f3f3f3;
@@ -216,23 +216,19 @@ section.app-actions {
   margin: 0 4px;
   flex-shrink: 0;
 }
-
-.filter-btn {
+.filter-btn{
   background-color: transparent;
   border: 1px solid var(--main-border-color);
-  display: flex;
-  align-items: center;
   border-radius: 20px;
   padding: 0;
   padding-right: 8px;
   margin: 0 16px;
   color: var(--buttons-color-primary);
   position: relative;
-  
-  
-  
+  .filter-icon {
+    background-color: transparent;
+  }
 }
-
 .filter-text {
   display: block;
   white-space: nowrap;
@@ -242,9 +238,20 @@ section.app-actions {
   padding: 0 24px 0 8px;
   position: relative;
   
- 
+  &:before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 0;
+    top: 50%;
+    transform: translatey(-50%);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-down'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
-
 .filter-icon {
   background-color: var(--buttons-color-secondary);
   border-radius: 50%;
@@ -255,14 +262,6 @@ section.app-actions {
   justify-content: center;
   align-items: center;
 }
-
-.filter-line-text {
-  font-size: 14px;
-  font-weight: 600;
-  margin-right: 32px;
-  color: var(--main-font-color);
-}
-
 .app-main {
   flex: 1;
   overflow: hidden;
